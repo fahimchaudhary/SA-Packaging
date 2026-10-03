@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
-import { Search, SlidersHorizontal, Eye, MessageCircle, ChevronDown, Check } from "lucide-react";
+import { Search, Eye, ChevronDown } from "lucide-react";
 import { galleryItems, GALLERY_CATEGORIES, GalleryItem } from "@/data/galleryData";
 import GalleryModal from "./GalleryModal";
-import { waLink } from "@/data/company";
+
 
 interface GalleryGridProps {
   initialLimit?: number;

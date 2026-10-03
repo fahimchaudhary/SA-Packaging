@@ -55,3 +55,4 @@ public/products/pharma-foil-lids-raw.png
 
 # Misc
 *.pem
+.vercel

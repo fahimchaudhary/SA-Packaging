@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Container, Eyebrow, Reveal, ButtonLink } from "@/components/ui";
-import { ArrowRight, Eye, Sparkles } from "lucide-react";
+import { Container, Reveal, ButtonLink } from "@/components/ui";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { galleryItems, GalleryItem } from "@/data/galleryData";
 import GalleryModal from "./GalleryModal";
 

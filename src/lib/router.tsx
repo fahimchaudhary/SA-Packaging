@@ -61,7 +61,7 @@ export function Link({
   const route = useRoute();
   const isActive = route.path === to;
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleClick = (_e: React.MouseEvent<HTMLAnchorElement>) => {
     if (onClick) onClick();
   };
 

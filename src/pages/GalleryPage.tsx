@@ -1,7 +1,7 @@
 import { Container, Eyebrow, Reveal } from "@/components/ui";
 import GalleryGrid from "@/components/GalleryGrid";
-import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
-import { company, waLink } from "@/data/company";
+import { MessageCircle } from "lucide-react";
+import { waLink } from "@/data/company";
 
 export default function GalleryPage() {
   const customDieMsg = "Hi S.A Packaging, I checked your gallery and need a custom die / lid tooling made for my cup rim drawing. Please let me know the process.";

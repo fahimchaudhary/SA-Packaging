@@ -3,7 +3,7 @@ import { Link } from "@/lib/router";
 import { company } from "@/data/company";
 import { categories } from "@/data/products";
 import { Logo } from "./Logo";
-import { Container } from "./ui";
+
 
 export default function Footer() {
   return (

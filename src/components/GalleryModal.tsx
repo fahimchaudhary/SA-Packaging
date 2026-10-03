@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, MessageCircle, Ruler, Layers, ShieldCheck } from "lucide-react";
 import { GalleryItem } from "@/data/galleryData";
-import { company, waLink } from "@/data/company";
+import { waLink } from "@/data/company";
 
 interface GalleryModalProps {
   item: GalleryItem | null;

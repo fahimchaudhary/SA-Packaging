@@ -129,7 +129,7 @@ export default function Home() {
 
               {/* Floating Works Capacity Card matching screenshot */}
               <Reveal delay={130}>
-                <div className="relative -mt-16 sm:-mt-20 ml-3 sm:ml-6 max-w-[290px] sm:max-w-[325px] rounded-2xl border border-slate-100 bg-white p-5 sm:p-6 shadow-[0_24px_50px_-12px_rgba(15,23,42,0.22)] backdrop-blur-xs">
+                <div className="relative -mt-16 sm:-mt-20 ml-3 sm:ml-6 w-[calc(100%-24px)] max-w-[290px] sm:max-w-[325px] rounded-2xl border border-slate-100 bg-white p-5 sm:p-6 shadow-[0_24px_50px_-12px_rgba(15,23,42,0.22)] backdrop-blur-xs">
                   <span className="block font-geist text-[11px] sm:text-[11.5px] font-bold tracking-[0.14em] text-[#708ca6] uppercase">
                     Works Capacity
                   </span>

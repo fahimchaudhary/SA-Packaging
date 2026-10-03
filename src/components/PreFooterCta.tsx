@@ -54,13 +54,13 @@ export default function PreFooterCta({ routePath, product }: PreFooterCtaProps) 
 
       case "/products":
         content = {
-          kicker: "MADE TO YOUR TOOL",
-          title: "Need a custom diameter or proprietary rim?",
+          kicker: "LIVE PRODUCTION WORK & SAMPLES",
+          title: "Want to inspect our live packaging dies & samples?",
           subtitle:
-            "From 5 mm micro-vials to 400 mm catering trays, we stamp custom dies and match heat-seal lacquer to your specific container material and filling machine.",
-          primaryLabel: "Explore customization",
-          primaryTo: "/customization",
-          secondaryLabel: "Talk to the works",
+            "Browse our interactive gallery of 77+ physical production dies, custom printed lids, embossed foils, and roll stock samples from our Sakinaka works.",
+          primaryLabel: "Explore Work in Gallery",
+          primaryTo: "/gallery",
+          secondaryLabel: "Request custom quotation",
           secondaryTo: "/contact",
         };
         break;

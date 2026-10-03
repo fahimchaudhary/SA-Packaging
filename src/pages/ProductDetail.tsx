@@ -39,7 +39,7 @@ export default function ProductDetail({ slug }: { slug: string }) {
 
   const category = getCategory(product.category);
   const related = products
-    .filter((p) => p.category === product.category && p.slug !== product.slug)
+    .filter((p) => p.slug !== product.slug)
     .slice(0, 3);
 
   const message =
@@ -125,12 +125,15 @@ export default function ProductDetail({ slug }: { slug: string }) {
               </Reveal>
 
               <Reveal delay={200}>
-                <div className="mt-6 flex flex-col gap-3 sm:flex-row font-geist">
+                <div className="mt-6 flex flex-wrap gap-3 font-geist">
                   <ExternalButton href={waLink(message)} variant="whatsapp">
                     Enquire about this lid
                   </ExternalButton>
                   <ButtonLink to="/contact" variant="outline">
                     Send a written enquiry
+                  </ButtonLink>
+                  <ButtonLink to="/gallery" variant="ghost">
+                    View work in Gallery →
                   </ButtonLink>
                 </div>
                 <p className="mt-3 font-geist text-[12.5px] text-ink-400">
@@ -164,10 +167,15 @@ export default function ProductDetail({ slug }: { slug: string }) {
           {/* Related */}
           {related.length > 0 && (
             <div className="mt-16">
-              <h2 className="font-display text-[1.3rem] font-bold">
-                Other lids in {category.label}
-              </h2>
-              <div className="mt-6 grid grid-cols-1 gap-4 min-[420px]:grid-cols-2 lg:grid-cols-3">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
+                <h2 className="font-display text-[1.3rem] font-bold">
+                  Other products in our range
+                </h2>
+                <Link to="/gallery" className="font-geist text-xs font-semibold text-brand-600 hover:text-brand-700 hover:underline">
+                  View 77+ Live Dies in Gallery →
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 gap-4 min-[420px]:grid-cols-2 lg:grid-cols-3">
                 {related.map((p, i) => (
                   <Reveal key={p.slug} delay={i * 70} className="h-full">
                     <ProductCard product={p} />

@@ -37,9 +37,6 @@ export function useRoute() {
 }
 
 export function navigate(to: string) {
-  if (to === "/" || to === "") {
-    window.dispatchEvent(new CustomEvent("trigger-preloader"));
-  }
   window.location.hash = to;
 }
 
@@ -65,9 +62,6 @@ export function Link({
   const isActive = route.path === to;
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (to === "/" || to === "") {
-      window.dispatchEvent(new CustomEvent("trigger-preloader"));
-    }
     if (onClick) onClick();
   };
 

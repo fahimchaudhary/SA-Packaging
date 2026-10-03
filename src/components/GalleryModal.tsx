@@ -49,7 +49,7 @@ export default function GalleryModal({ item, items, onClose, onSelect }: Gallery
       onClick={onClose}
     >
       <div
-        className="relative flex flex-col lg:flex-row w-full max-w-4xl max-h-[92vh] overflow-hidden rounded-3xl border border-white/15 bg-white shadow-2xl"
+        className="relative flex flex-col lg:flex-row w-full max-w-4xl max-h-[92vh] overflow-y-auto overflow-x-hidden rounded-3xl border border-white/15 bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

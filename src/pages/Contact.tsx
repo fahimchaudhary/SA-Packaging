@@ -1,5 +1,14 @@
 import { useState, type FormEvent } from "react";
-import { Clock, Mail, MapPin, Phone, Receipt, Landmark } from "lucide-react";
+import {
+  Clock,
+  Mail,
+  MapPin,
+  Phone,
+  Receipt,
+  Landmark,
+  Navigation,
+  ExternalLink,
+} from "lucide-react";
 import { cn } from "@/utils/cn";
 import { company, polymers, waLink } from "@/data/company";
 import { categories, products } from "@/data/products";
@@ -252,13 +261,26 @@ export default function Contact() {
                   <ul className="mt-5 space-y-4 text-[14px] text-ink-600">
                     <li className="flex gap-3">
                       <MapPin className="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand-600" strokeWidth={1.8} />
-                      <address className="leading-relaxed not-italic">
-                        {company.addressLines.map((l) => (
-                          <span key={l} className="block">
-                            {l}
-                          </span>
-                        ))}
-                      </address>
+                      <div className="leading-relaxed text-[13.5px]">
+                        <address className="not-italic">
+                          {company.addressLines.map((l) => (
+                            <span key={l} className="block">
+                              {l}
+                            </span>
+                          ))}
+                        </address>
+                        <div className="mt-2.5 pt-2 border-t border-ink-100/80">
+                          <a
+                            href={company.directionsUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-700 hover:underline"
+                          >
+                            <Navigation className="h-3.5 w-3.5" />
+                            Open route &amp; directions in Google Maps →
+                          </a>
+                        </div>
+                      </div>
                     </li>
                     <li className="flex gap-3">
                       <Clock className="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand-600" strokeWidth={1.8} />
@@ -351,6 +373,83 @@ export default function Contact() {
               </Reveal>
             </div>
           </div>
+        </Container>
+      </Section>
+
+      {/* ----------------------------- Factory Location & Map Section ---------------------------- */}
+      <Section className="border-t border-ink-100 bg-[#f8fafc]/70 py-12 sm:py-16">
+        <Container>
+          <Reveal>
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+              <div>
+                <div className="inline-flex items-center gap-2 rounded-full bg-brand-50 border border-brand-200/80 px-3 py-1 text-[11px] font-bold text-brand-700 uppercase tracking-wider font-geist">
+                  <MapPin className="h-3.5 w-3.5 text-brand-600" />
+                  Factory &amp; Works Location
+                </div>
+                <h2 className="mt-2.5 font-display text-2xl sm:text-3xl font-bold tracking-tight text-ink-900">
+                  Visit our Sakinaka Works
+                </h2>
+                <p className="mt-1 font-lora text-[14.5px] text-ink-600">
+                  Sakinaka, Andheri East, Mumbai — Click anywhere on the map to navigate directly via Google Maps.
+                </p>
+              </div>
+
+              <a
+                href={company.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tap inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-3 text-[14px] font-semibold text-white shadow-xs transition-all hover:bg-brand-700 hover:shadow-md shrink-0 w-fit font-geist"
+              >
+                <Navigation className="h-4 w-4" />
+                Get Directions
+              </a>
+            </div>
+
+            {/* Clickable Map: clicking anywhere opens Google Maps directions directly */}
+            <a
+              href={company.directionsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block overflow-hidden rounded-2xl border border-ink-200/90 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:border-brand-500 cursor-pointer"
+              title="Click to open route and location in Google Maps"
+            >
+              <div className="relative aspect-[16/9] w-full min-h-[380px] sm:min-h-[460px]">
+                {/* Embedded Map iframe with pointer-events-none so clicking ANYWHERE triggers the anchor */}
+                <iframe
+                  title="S.A Packaging Manufacturing Location - Sakinaka, Mumbai"
+                  src={company.googleMapsEmbedUrl}
+                  className="h-full w-full border-0 pointer-events-none"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+
+                {/* Hover tint */}
+                <div className="absolute inset-0 bg-ink-950/0 transition-colors duration-200 group-hover:bg-ink-950/5 pointer-events-none" />
+
+                {/* Top Floating Badge */}
+                <div className="absolute top-4 left-4 right-4 sm:top-5 sm:left-5 sm:right-auto flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-3 rounded-xl border border-ink-200/90 shadow-md font-geist pointer-events-none">
+                  <div className="h-10 w-10 rounded-lg bg-brand-500 text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <Navigation className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <p className="text-[13.5px] font-bold text-ink-900 leading-tight">
+                      S.A Packaging · Sakinaka, Mumbai
+                    </p>
+                    <p className="text-[12px] text-brand-600 font-semibold flex items-center gap-1 mt-0.5">
+                      <span>Click to open location &amp; directions in Google Maps</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </p>
+                  </div>
+                </div>
+
+                {/* Bottom Right Floating Badge */}
+                <div className="absolute bottom-4 right-4 sm:bottom-5 sm:right-5 bg-ink-900 text-white px-4 py-2.5 rounded-xl text-[13px] font-semibold font-geist shadow-lg flex items-center gap-2 group-hover:bg-brand-600 transition-colors pointer-events-none">
+                  <Navigation className="h-4 w-4" />
+                  <span>Open in Google Maps ↗</span>
+                </div>
+              </div>
+            </a>
+          </Reveal>
         </Container>
       </Section>
     </>

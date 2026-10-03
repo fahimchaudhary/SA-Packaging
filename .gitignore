@@ -50,7 +50,6 @@ coverage/
 
 # Large raw/source assets (not needed in repo)
 public/products/Foil lead_no_bg/
-public/products/gallery/
 public/products/pharma-foil-lids-raw.png
 
 # Misc

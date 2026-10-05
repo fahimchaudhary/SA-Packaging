@@ -51,7 +51,7 @@ export default function ProductsPage() {
             <span>for bulk industrial packing.</span>
           </>
         }
-        lede="Explore our 7 core foil lid product lines manufactured to order at our Sakinaka works. Available from 5 mm to 400 mm in plain silver, embossed, and up to 4-colour brand print."
+        lede="Explore our 7 core foil lid product lines manufactured to order at our Sakinaka works. Available from 5 mm to 400 mm in plain silver, embossed, and multi-colour brand print."
         bottomBar={
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-2 font-geist">
             <div className="flex items-center gap-2 text-xs sm:text-[13px] text-ink-700 font-medium">

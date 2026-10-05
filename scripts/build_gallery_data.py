@@ -25,7 +25,7 @@ DAIRY_NAMES = [
 ]
 
 PRINTED_NAMES = [
-    "Custom 4-Colour Printed Brand Foil Lid",
+    "Custom Multi-Colour Printed Brand Foil Lid",
     "High-Gloss Process Printed Yogurt Seal",
     "Reverse-Coated Registered Artwork Lid",
     "Matte Finish Custom Printed Foil Seal",

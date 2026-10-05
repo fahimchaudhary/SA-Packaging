@@ -67,7 +67,7 @@ export const categories: {
     label: "Printed Foil Lids",
     short: "Printed",
     summary:
-      "High-definition brand-printed lids in 1 to 4 colours on the outer face. The print layer is separated from the seal chemistry, allowing complete artwork customization while maintaining dependable seal performance.",
+      "High-definition brand-printed lids in vibrant multi-colour graphics on the outer face. The print layer is separated from the seal chemistry, allowing complete artwork customization while maintaining dependable seal performance.",
     note: "Supply your print-ready artwork or physical sample; full print proofs are approved prior to bulk production.",
   },
   {
@@ -144,7 +144,7 @@ export const products: Product[] = [
     material: "Aluminium foil with HIPS-compatible heat-seal coating",
     thickness: "30 – 35 micron",
     seal: "HIPS-compatible coating",
-    finish: "Plain bright silver or 1 to 4-colour print",
+    finish: "Plain bright silver or custom multi-colour print",
     supply: "Die-cut lids, packed in cartons",
     applications: [
       "Thermoformed dessert cups & pudding packs",
@@ -190,7 +190,7 @@ export const products: Product[] = [
     material: "Aluminium foil with high-definition outer print & lacquer inner",
     thickness: "30 – 35 micron",
     seal: "Polymer-specific lacquer (PP, HIPS, or PET)",
-    finish: "1 to 4-colour brand print with protective topcoat",
+    finish: "High-definition multi-colour brand print with protective topcoat",
     supply: "Die-cut lids in cartons, or printed roll stock",
     applications: [
       "Branded curd & dahi retail cups",
@@ -199,7 +199,7 @@ export const products: Product[] = [
       "Private label brands & FMCG dairy packaging",
     ],
     description:
-      "Custom brand-printed aluminium foil lids in 1 to 4 colours on the outer face. Incorporates artwork branding, batch coding panels, and FSSAI declarations while preserving uncompromised heat-seal bonding against your container rim.",
+      "Custom brand-printed aluminium foil lids in high-definition multi-colour on the outer face. Incorporates artwork branding, batch coding panels, and FSSAI declarations while preserving uncompromised heat-seal bonding against your container rim.",
     image: "/products/printed-curd-lids.jpg",
     featured: true,
   },
@@ -236,7 +236,7 @@ export const products: Product[] = [
     material: "Custom-gauge aluminium foil matched to container specification",
     thickness: "25 – 45 micron to specification",
     seal: "PP, HIPS, PET, PE, or Universal peel lacquer",
-    finish: "Plain silver, embossed, or 1 to 4-colour print",
+    finish: "Plain silver, embossed, or custom multi-colour print",
     supply: "Die-cut shaped lids, custom cartons, or slit rolls",
     applications: [
       "Non-standard rim diameters & proprietary moulds",

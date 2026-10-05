@@ -27,7 +27,7 @@ export const galleryItems: GalleryItem[] = [
   {
     "id": "SAP-DIE-001",
     "filename": "20261003_002734.webp",
-    "title": "Custom 4-Colour Printed Brand Foil Lid",
+    "title": "Custom Multi-Colour Printed Brand Foil Lid",
     "category": "printed",
     "categoryLabel": "Custom Printed",
     "substrate": "PP / PS / PET",
@@ -402,7 +402,7 @@ export const galleryItems: GalleryItem[] = [
   {
     "id": "SAP-DIE-026",
     "filename": "20261003_003043.webp",
-    "title": "Custom 4-Colour Printed Brand Foil Lid",
+    "title": "Custom Multi-Colour Printed Brand Foil Lid",
     "category": "printed",
     "categoryLabel": "Custom Printed",
     "substrate": "PP / PS / PET",
@@ -1092,7 +1092,7 @@ export const galleryItems: GalleryItem[] = [
   {
     "id": "SAP-DIE-072",
     "filename": "20261003_003415.webp",
-    "title": "Custom 4-Colour Printed Brand Foil Lid",
+    "title": "Custom Multi-Colour Printed Brand Foil Lid",
     "category": "printed",
     "categoryLabel": "Custom Printed",
     "substrate": "PP / PS / PET",

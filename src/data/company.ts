@@ -29,7 +29,7 @@ export const company = {
   typicalSizeRange: "20 – 150 mm (dairy / cup)",
   thickness: "25 – 40 micron (30 micron common for dairy cups)",
   supply: "Die-cut lids in cartons, or lidding foil in roll form",
-  print: "Plain silver, 1 colour, or up to 4-colour brand print",
+  print: "Plain silver, 1 colour, or custom multi-colour brand print",
   orderPolicy: "Industrial / bulk only — no piece retail",
   phoneDisplay: "+91 81698 00610",
   phoneE164: "918169800610",
@@ -80,7 +80,7 @@ export const quoteChecklist = [
   "Cup or jar polymer — PP, PS, HIPS, PET or glass",
   "Rim outer diameter in mm (or send a sample cup)",
   "Required lid diameter and foil thickness, if already fixed",
-  "Plain silver, 1-colour or up to 4-colour print",
+  "Plain silver, single-colour or custom multi-colour print",
   "Supply form — die-cut lids in cartons, or foil in roll form",
   "Monthly offtake and delivery location",
 ];

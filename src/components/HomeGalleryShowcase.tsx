@@ -32,7 +32,7 @@ export default function HomeGalleryShowcase() {
             </Reveal>
             <Reveal delay={110}>
               <p className="mt-3 font-lora text-[15px] sm:text-[16px] leading-relaxed text-ink-600">
-                From 53 mm packaged water lids to 95 mm lassi cups and 4-colour brand packaging. Over 77 ready dies manufactured at our Sakinaka facility.
+                From 53 mm packaged water lids to 95 mm lassi cups and multi-colour brand packaging. Over 77 ready dies manufactured at our Sakinaka facility.
               </p>
             </Reveal>
           </div>

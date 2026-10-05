@@ -58,7 +58,7 @@ const capabilities = [
   },
   {
     icon: Printer,
-    title: "Plain silver to 4-colour brand print",
+    title: "Plain silver to multi-colour brand print",
     body: "Print sits on the outer face and is independent of the seal layer, so artwork changes do not alter sealing temperature or peel behaviour.",
   },
 ];
@@ -174,37 +174,11 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* ------------------------------- Capability ------------------------------ */}
-      <Section className="bg-white">
-        <Container>
-          <SectionHead
-            eyebrow="What we do"
-            title="A single works for every lid on your line"
-            lede="Foil lids look simple until the seal fails in transit. Our work is to match foil gauge, lacquer and cutting size to the exact cup you run — and then hold that specification order after order."
-          />
-
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {capabilities.map((c, i) => (
-              <Reveal key={c.title} delay={i * 80}>
-                <article className="group h-full rounded-xl border border-ink-100 bg-white p-6 transition-all duration-300 hover:border-brand-200 hover:shadow-[0_18px_40px_-30px_rgba(20,20,24,0.6)]">
-                  <span className="grid h-10 w-10 place-items-center rounded-lg bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
-                    <c.icon className="h-5 w-5" strokeWidth={1.8} />
-                  </span>
-                  <h3 className="mt-5 font-display text-[1.05rem] font-bold">
-                    {c.title}
-                  </h3>
-                  <p className="mt-2.5 text-[14.5px] leading-relaxed text-ink-500">
-                    {c.body}
-                  </p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {/* --------------------------- Live Dies & Gallery -------------------------- */}
+      <HomeGalleryShowcase />
 
       {/* ------------------------------- Featured -------------------------------- */}
-      <Section className="border-y border-ink-100 bg-paper">
+      <Section className="border-b border-ink-100 bg-paper">
         <Container>
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <SectionHead
@@ -241,8 +215,34 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* --------------------------- Live Dies & Gallery -------------------------- */}
-      <HomeGalleryShowcase />
+      {/* ------------------------------- Capability ------------------------------ */}
+      <Section className="border-b border-ink-100 bg-white">
+        <Container>
+          <SectionHead
+            eyebrow="What we do"
+            title="A single works for every lid on your line"
+            lede="Foil lids look simple until the seal fails in transit. Our work is to match foil gauge, lacquer and cutting size to the exact cup you run — and then hold that specification order after order."
+          />
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-2">
+            {capabilities.map((c, i) => (
+              <Reveal key={c.title} delay={i * 80}>
+                <article className="group h-full rounded-xl border border-ink-100 bg-white p-6 transition-all duration-300 hover:border-brand-200 hover:shadow-[0_18px_40px_-30px_rgba(20,20,24,0.6)]">
+                  <span className="grid h-10 w-10 place-items-center rounded-lg bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-500 group-hover:text-white">
+                    <c.icon className="h-5 w-5" strokeWidth={1.8} />
+                  </span>
+                  <h3 className="mt-5 font-display text-[1.05rem] font-bold">
+                    {c.title}
+                  </h3>
+                  <p className="mt-2.5 text-[14.5px] leading-relaxed text-ink-500">
+                    {c.body}
+                  </p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </Section>
 
       {/* ------------------------------ Industries ------------------------------- */}
       <Section className="bg-white">

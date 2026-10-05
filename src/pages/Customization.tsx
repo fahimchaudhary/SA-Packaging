@@ -35,7 +35,7 @@ const steps = [
     icon: FileImage,
     step: "Step 03",
     title: "Approve the print proof",
-    body: "For printed lids, artwork is set in 1 to 4 colours and a proof is sent for written approval. Plain silver work skips straight to a first-off sample.",
+    body: "For printed lids, artwork is set in custom multi-colour designs and a proof is sent for written approval. Plain silver work skips straight to a first-off sample.",
   },
   {
     icon: PackageCheck,
@@ -75,7 +75,7 @@ const specifiable = [
 export default function Customization() {
   const message =
     "Hello S.A Packaging, I would like to develop a custom foil lid.\n\n" +
-    "Cup / jar polymer: \nRim diameter (mm): \nFoil thickness: \nPrint (plain / 1-4 colour): \nSupply form (die-cut / roll): \nMonthly quantity: ";
+    "Cup / jar polymer: \nRim diameter (mm): \nFoil thickness: \nPrint (plain / multi-colour): \nSupply form (die-cut / roll): \nMonthly quantity: ";
 
   return (
     <>

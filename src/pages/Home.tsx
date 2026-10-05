@@ -20,6 +20,7 @@ import {
 import { featuredProducts, categories } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import HomeGalleryShowcase from "@/components/HomeGalleryShowcase";
+import BrandPillarsStrip from "@/components/BrandPillarsStrip";
 import {
   ButtonLink,
   CheckItem,
@@ -73,22 +74,27 @@ export default function Home() {
             {/* Left Content Column */}
             <div className="flex flex-col items-start text-left max-w-2xl">
               <Reveal>
-                <div className="inline-flex items-center gap-2 rounded-full border border-brand-200/90 bg-white/95 px-3.5 py-1 text-[11px] sm:text-[12px] font-bold tracking-[0.06em] text-brand-700 shadow-xs backdrop-blur-xs font-geist">
-                  <span className="h-1.5 w-1.5 rounded-full bg-brand-500 shrink-0" />
-                  <span>MANUFACTURER · SAKINAKA, MUMBAI</span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-brand-200/90 bg-white/95 px-3.5 py-1 text-[11px] sm:text-[12px] font-bold tracking-[0.06em] text-brand-700 shadow-xs backdrop-blur-xs font-geist">
+                    <span className="h-1.5 w-1.5 rounded-full bg-brand-500 shrink-0" />
+                    <span>MANUFACTURER · SAKINAKA, MUMBAI</span>
+                  </div>
+                  <div className="inline-flex items-center gap-1.5 rounded-full border border-sky-200/80 bg-sky-50/90 px-3 py-1 text-[11px] sm:text-[12px] font-medium text-brand-900 shadow-2xs font-geist">
+                    <span className="font-serif italic font-semibold text-brand-700">“Quality Packaging for a Better Tomorrow”</span>
+                  </div>
                 </div>
               </Reveal>
 
               <Reveal delay={70}>
                 <h1 className="mt-4 font-display text-[32px] min-[390px]:text-[37px] sm:text-[46px] lg:text-[52px] xl:text-[58px] font-extrabold tracking-[-0.04em] text-ink-900 leading-[1.08]">
-                  Custom Aluminium Foil Lids,{" "}
+                  Aluminium Foil Packaging Manufacturer in Mumbai,{" "}
                   <span className="text-brand-500">Made to Your Requirements.</span>
                 </h1>
               </Reveal>
 
               <Reveal delay={110}>
                 <p className="mt-4 font-lora text-[15px] sm:text-[16.5px] leading-[1.7] text-ink-600">
-                  Heat-seal foil lids manufactured for dairy, beverages, food and FMCG packaging—with custom sizes, designs and printing.
+                  Heat-seal aluminium foil lids and food packaging solutions manufactured from 5 mm to 400 mm for dairy, beverages, food and FMCG packaging—with custom sizes, designs and printing.
                 </p>
               </Reveal>
 
@@ -118,7 +124,10 @@ export default function Home() {
                 <div className="group relative overflow-hidden rounded-2xl border border-ink-200/80 bg-white shadow-[0_20px_44px_-20px_rgba(20,24,32,0.25)]">
                   <Img
                     src="/hero-foil.jpg"
-                    alt="Precision high-speed aluminium foil converting and die-cutting line at S.A Packaging works"
+                    alt="Aluminium foil packaging roll converting and die-cutting line at S A Packaging works in Sakinaka, Mumbai"
+                    priority={true}
+                    width={1536}
+                    height={1024}
                     className="aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   />
                   <div className="absolute top-3 right-3 rounded-full border border-white/20 bg-ink-900/85 px-3 py-1 font-geist text-[10.5px] font-semibold tracking-wide text-white shadow-xs backdrop-blur-md">
@@ -139,12 +148,19 @@ export default function Home() {
                   <p className="mt-2.5 font-geist text-[12px] sm:text-[13px] leading-relaxed text-[#64748b]">
                     Die-cut lids in cartons, or foil in roll form
                   </p>
+                  <div className="mt-3.5 pt-3 border-t border-slate-100/90 flex items-center justify-between text-[11px] font-geist text-slate-500">
+                    <span className="font-serif italic text-brand-700 font-medium">Quality Packaging for a Better Tomorrow</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-brand-500 shrink-0" />
+                  </div>
                 </div>
               </Reveal>
             </div>
           </div>
         </Container>
       </section>
+
+      {/* ----------------- Official Factory Trust Pillars Strip ----------------- */}
+      <BrandPillarsStrip />
 
       {/* --------------------------------- Stats --------------------------------- */}
       <section className="border-b border-ink-100 bg-white">
@@ -182,8 +198,8 @@ export default function Home() {
         <Container>
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <SectionHead
-              eyebrow="Product range"
-              title="Lids we manufacture every week"
+              eyebrow="Aluminium Foil Packaging"
+              title="Lids and packaging solutions we manufacture"
               lede="Six categories covering PP cups, printed brand lids, HIPS dessert cups, PP lacquer roll stock, blister lidding and PET jar seals."
             />
             <Reveal delay={160} className="shrink-0 sm:pb-2">
@@ -219,7 +235,7 @@ export default function Home() {
       <Section className="border-b border-ink-100 bg-white">
         <Container>
           <SectionHead
-            eyebrow="What we do"
+            eyebrow="Why Choose S A Packaging"
             title="A single works for every lid on your line"
             lede="Foil lids look simple until the seal fails in transit. Our work is to match foil gauge, lacquer and cutting size to the exact cup you run — and then hold that specification order after order."
           />
@@ -250,7 +266,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
             <div>
               <SectionHead
-                eyebrow="Who we supply"
+                eyebrow="Food Packaging Foil"
                 title="Packers who seal thousands of cups a shift"
                 lede="Our lids go to plants where a failed seal means a returned consignment. Each industry below has its own polymer and peel requirement."
               />
@@ -341,7 +357,9 @@ export default function Home() {
               <div className="overflow-hidden rounded-xl border border-ink-200">
                 <Img
                   src="/works-floor.jpg"
-                  alt="Cartons of die-cut foil lids and rolls of lidding foil at the works"
+                  alt="Cartons of die-cut aluminium foil lids and rolls of food packaging foil at S A Packaging manufacturing plant in Sakinaka, Mumbai"
+                  width={1536}
+                  height={1152}
                   className="aspect-[4/3] w-full object-cover"
                 />
               </div>
@@ -349,7 +367,7 @@ export default function Home() {
 
             <div>
               <SectionHead
-                eyebrow="How we work"
+                eyebrow="Packaging Solutions"
                 title="Technical rules we will not bend"
                 lede="These three points prevent most of the seal complaints we see when buyers switch suppliers."
               />

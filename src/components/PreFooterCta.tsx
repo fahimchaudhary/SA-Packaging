@@ -138,6 +138,25 @@ export default function PreFooterCta({ routePath, product }: PreFooterCtaProps) 
                 {content.subtitle}
               </p>
             </Reveal>
+
+            <Reveal delay={145}>
+              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] font-geist text-[#94c3ff]">
+                <span className="flex items-center gap-1.5 font-medium">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#bbf438] shadow-[0_0_8px_#bbf438]" />
+                  High Quality Material
+                </span>
+                <span className="text-white/20 select-none">|</span>
+                <span className="flex items-center gap-1.5 font-medium">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#bbf438] shadow-[0_0_8px_#bbf438]" />
+                  Custom Size &amp; Design
+                </span>
+                <span className="text-white/20 select-none">|</span>
+                <span className="flex items-center gap-1.5 font-medium">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#bbf438] shadow-[0_0_8px_#bbf438]" />
+                  On-Time Delivery
+                </span>
+              </div>
+            </Reveal>
           </div>
 
           <Reveal delay={150}>

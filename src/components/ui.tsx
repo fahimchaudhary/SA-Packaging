@@ -393,10 +393,16 @@ export function Img({
   src,
   alt,
   className,
+  priority = false,
+  width,
+  height,
 }: {
   src: string;
   alt: string;
   className?: string;
+  priority?: boolean;
+  width?: number;
+  height?: number;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -418,7 +424,12 @@ export function Img({
     <img
       src={src}
       alt={alt}
-      loading="lazy"
+      width={width}
+      height={height}
+      loading={priority ? "eager" : "lazy"}
+      decoding="async"
+      // @ts-expect-error React 19 / modern HTML standard fetchPriority
+      fetchpriority={priority ? "high" : "auto"}
       onError={() => setFailed(true)}
       className={className}
     />

@@ -51,6 +51,9 @@ export default function Header() {
       <div className="hidden bg-ink-900 text-white md:block font-geist">
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 flex h-9 items-center justify-between text-[11.5px]">
           <ul className="flex items-center gap-5 text-white/70">
+            <li className="hidden xl:flex items-center gap-1.5 font-medium text-brand-300">
+              <span className="italic font-serif">“Quality Packaging for a Better Tomorrow”</span>
+            </li>
             <li className="flex items-center gap-1.5">
               <MapPin className="h-3.5 w-3.5 text-brand-300" />
               Sakinaka, Mumbai
@@ -201,6 +204,9 @@ export default function Header() {
             </p>
             <p className="text-[10px] font-semibold tracking-[0.22em] text-ink-400 uppercase mt-0.5">
               Aluminium Foil Lids · Mumbai
+            </p>
+            <p className="mt-1 font-serif italic text-[11px] text-brand-600 font-medium">
+              “Quality Packaging for a Better Tomorrow”
             </p>
           </Link>
         </div>

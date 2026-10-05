@@ -12,7 +12,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.25fr_1fr_1fr_1.1fr] lg:gap-12">
           <div>
             <Logo variant="dark" />
-            <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/65 font-lora">
+            <p className="mt-3 font-serif italic text-[13px] text-brand-300 font-medium">
+              “Quality Packaging for a Better Tomorrow”
+            </p>
+            <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-white/65 font-lora">
               Manufacturer of heat-seal aluminium foil lids for dairy, beverage,
               PET jar, HIPS dessert and blister packs. Supply is industrial and
               bulk only — quantities and rates are confirmed on quotation.
@@ -116,8 +119,11 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-[12px] text-white/40 sm:flex-row sm:items-center sm:justify-between font-geist">
           <p className="font-geist">
-            © {new Date().getFullYear()} {company.name}. Proprietorship ·{" "}
-            {company.ceo}. All rights reserved.
+            © {new Date().getFullYear()} {company.name}. Proprietorship · Director:{" "}
+            {company.director}. All rights reserved.
+          </p>
+          <p className="font-serif italic text-brand-300/80 text-[12.5px]">
+            Quality Packaging for a Better Tomorrow
           </p>
           <p className="font-geist">Bulk and industrial supply only. No retail or single-piece sale.</p>
         </div>

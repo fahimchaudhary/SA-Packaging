@@ -14,7 +14,9 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-b from-slate-50 to-slate-100/80 p-5 flex items-center justify-center">
         <Img
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} manufactured by S A Packaging`}
+          width={400}
+          height={300}
           className="h-full w-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.12)] transition-transform duration-500 ease-out group-hover:scale-105"
         />
         <span className="absolute top-3 left-3 rounded-full border border-ink-100/60 bg-white/95 px-2.5 py-1 font-geist text-[10.5px] font-semibold tracking-wide text-ink-800 shadow-xs backdrop-blur-md">

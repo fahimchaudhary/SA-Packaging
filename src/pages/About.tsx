@@ -21,6 +21,7 @@ import {
   SectionHead,
   SpecRow,
 } from "@/components/ui";
+import BrandPillarsStrip from "@/components/BrandPillarsStrip";
 
 const works = [
   {
@@ -50,7 +51,7 @@ const works = [
 ];
 
 const particulars = [
-  { icon: UserRound, label: "CEO / Promoter", value: company.ceo },
+  { icon: UserRound, label: "Director / Promoter", value: company.director },
   { icon: Building2, label: "Nature of business", value: company.nature },
   { icon: Receipt, label: "Legal status", value: company.legalStatus },
   { icon: Receipt, label: "GSTIN", value: company.gstin },
@@ -63,6 +64,10 @@ const particulars = [
 ];
 
 const pillars = [
+  {
+    title: "Our Motto",
+    body: `“${company.motto}” — our founding benchmark across foil lacquer selection, precision die-cutting and clean-peel reliability.`,
+  },
   {
     title: "Purpose",
     body: "To give dairy and food packers a dependable domestic source for heat-seal foil lids — correct polymer match, consistent cut size and repeatable peel, order after order.",
@@ -88,13 +93,16 @@ export default function About() {
             <span>foil lids for Indian industry.</span>
           </>
         }
-        lede={`${company.name} is a proprietorship manufacturer established in ${company.established}, run by ${company.ceo}. We die-cut and lacquer-coat aluminium foil lids for dairy, beverage, PET jar, and blister packs in bulk.`}
+        lede={`${company.name} is a proprietorship manufacturer established in ${company.established}, directed by ${company.director} with the motto “${company.motto}”. We die-cut and lacquer-coat aluminium foil lids for dairy, beverage, PET jar, and blister packs in bulk.`}
       >
         <ButtonLink to="/products">View products range</ButtonLink>
         <ExternalButton href={waLink(defaultWaMessage)} variant="outline">
           Enquire on WhatsApp
         </ExternalButton>
       </PageHero>
+
+      {/* Core Manufacturing Guarantees Banner */}
+      <BrandPillarsStrip />
 
       {/* ------------------------------- The works ------------------------------- */}
       <Section className="bg-white">
@@ -147,9 +155,9 @@ export default function About() {
         <Container>
           <SectionHead
             eyebrow="How we operate"
-            title="Purpose, process and the buyers we serve"
+            title="Motto, purpose, process and the buyers we serve"
           />
-          <div className="mt-11 grid gap-4 lg:grid-cols-3">
+          <div className="mt-11 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {pillars.map((p, i) => (
               <Reveal key={p.title} delay={i * 90}>
                 <article className="h-full rounded-xl border border-ink-100 bg-white p-6">

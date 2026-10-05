@@ -14,7 +14,7 @@ export default function GalleryPage() {
           <div className="page-heading">
             <div className="page-heading-main">
               <Reveal>
-                <Eyebrow>DIE INVENTORY · 77+ LIVE SAMPLES</Eyebrow>
+                <Eyebrow>DIE INVENTORY · 5 MM TO 400 MM RANGE · 77+ SAMPLES</Eyebrow>
               </Reveal>
               <Reveal delay={70}>
                 <h1 className="mt-3 font-display text-[32px] sm:text-[44px] lg:text-[50px] font-extrabold tracking-[-0.03em] text-ink-900 leading-[1.12]">

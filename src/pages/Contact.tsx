@@ -8,11 +8,13 @@ import {
   Landmark,
   Navigation,
   ExternalLink,
+  UserRound,
 } from "lucide-react";
 import { cn } from "@/utils/cn";
-import { company, polymers, waLink } from "@/data/company";
+import { company, polymers, waLink, defaultWaMessage } from "@/data/company";
 import { categories, products } from "@/data/products";
 import { Container, ExternalButton, Note, PageHero, Reveal, Section } from "@/components/ui";
+import BrandPillarsStrip from "@/components/BrandPillarsStrip";
 
 type Fields = {
   name: string;
@@ -80,8 +82,18 @@ export default function Contact() {
             <span>or visit our Sakinaka works.</span>
           </>
         }
-        lede="Fill the brief below and it opens in WhatsApp, pre-written and ready to send. You can also call the works directly during working hours. Supply is industrial and bulk only."
-      />
+        lede={`Fill the brief below and it opens in WhatsApp, pre-written and ready to send. You can also email ${company.email} or speak directly with Director ${company.director}. Supply is industrial and bulk only.`}
+      >
+        <ExternalButton href={waLink(defaultWaMessage)}>
+          Chat on WhatsApp
+        </ExternalButton>
+        <ExternalButton href={`mailto:${company.email}`} variant="outline">
+          Email: {company.email}
+        </ExternalButton>
+      </PageHero>
+
+      {/* Core Manufacturing Guarantees Banner */}
+      <BrandPillarsStrip />
 
       <Section className="bg-white">
         <Container>
@@ -314,13 +326,29 @@ export default function Contact() {
                       </div>
                     </li>
                     <li className="flex gap-3">
+                      <UserRound className="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand-600" strokeWidth={1.8} />
+                      <div className="leading-relaxed text-[13.5px]">
+                        <span className="block text-[11px] font-semibold text-ink-400 uppercase tracking-wider">
+                          Director
+                        </span>
+                        <span className="font-bold text-ink-900 text-[14.5px]">
+                          {company.director}
+                        </span>
+                      </div>
+                    </li>
+                    <li className="flex gap-3">
                       <Mail className="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand-600" strokeWidth={1.8} />
-                      <a
-                        href={`mailto:${company.email}`}
-                        className="font-medium text-ink-800 hover:text-brand-600"
-                      >
-                        {company.email}
-                      </a>
+                      <div className="leading-relaxed text-[13.5px]">
+                        <span className="block text-[11px] font-semibold text-ink-400 uppercase tracking-wider">
+                          Official Email
+                        </span>
+                        <a
+                          href={`mailto:${company.email}`}
+                          className="font-semibold text-brand-600 hover:text-brand-700 hover:underline text-[14px]"
+                        >
+                          {company.email}
+                        </a>
+                      </div>
                     </li>
                   </ul>
 
@@ -356,8 +384,13 @@ export default function Contact() {
                     <li className="flex gap-3">
                       <Receipt className="mt-0.5 h-4 w-4 shrink-0 text-ink-400" strokeWidth={1.8} />
                       <span>
-                        HSN {company.hsn} · {company.legalStatus} ·{" "}
-                        {company.ceo}
+                        HSN {company.hsn} · {company.legalStatus}
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <UserRound className="mt-0.5 h-4 w-4 shrink-0 text-ink-400" strokeWidth={1.8} />
+                      <span>
+                        Director / Promoter: <strong className="font-semibold text-ink-800">{company.director}</strong>
                       </span>
                     </li>
                   </ul>

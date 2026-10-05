@@ -1,9 +1,11 @@
 export const company = {
   name: "S.A Packaging",
   tagline: "Heat-seal aluminium foil lids for bulk dairy and beverage packing.",
+  motto: "Quality Packaging for a Better Tomorrow",
   nature: "Manufacturer",
   legalStatus: "Proprietorship",
-  ceo: "S Shaikh",
+  director: "Imran Shaikh",
+  ceo: "Imran Shaikh",
   experienceYears: 12,
   established: "2014",
   location: "Sakinaka, Mumbai, Maharashtra, India",
@@ -35,7 +37,7 @@ export const company = {
   phoneE164: "918169800610",
   phoneSecondaryDisplay: "+91 97951 61580",
   phoneSecondaryE164: "919795161580",
-  email: "safoil3095@gmail.com",
+  email: "info@safoillids.com",
   hours: "Monday – Saturday, 9:30 am – 6:30 pm IST",
 } as const;
 
@@ -93,3 +95,19 @@ export function waLink(message: string) {
 export const defaultWaMessage =
   `Hello S.A Packaging, I would like a quotation for heat-seal aluminium foil lids.\n\n` +
   `Cup / jar polymer: \nRim diameter (mm): \nPrint: \nSupply form: \nMonthly quantity: `;
+
+export const brandPillars = [
+  {
+    title: "High Quality Material",
+    detail: "Certified food-grade aluminium foil with precision heat-seal lacquer chemistry.",
+  },
+  {
+    title: "Custom Size & Design",
+    detail: "Tooling from 5 mm to 400 mm, tailored rim embossing, and multi-colour brand print.",
+  },
+  {
+    title: "On-Time Delivery",
+    detail: "Dependable dispatch schedules so industrial filling and sealing lines never pause.",
+  },
+] as const;
+

@@ -72,7 +72,10 @@ export default function ProductDetail({ slug }: { slug: string }) {
               <div className="overflow-hidden rounded-xl border border-ink-100 bg-gradient-to-b from-slate-50 to-slate-100/80 p-8 flex items-center justify-center">
                 <Img
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} — Aluminium foil packaging supplied by S A Packaging`}
+                  priority={true}
+                  width={600}
+                  height={450}
                   className="aspect-[4/3] w-full object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.15)]"
                 />
               </div>

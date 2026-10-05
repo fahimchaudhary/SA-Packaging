@@ -22,7 +22,7 @@ export default function HomeGalleryShowcase() {
             <Reveal>
               <div className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50/80 px-3 py-1 font-geist text-[11px] font-bold text-brand-700 tracking-wide uppercase">
                 <Sparkles className="h-3.5 w-3.5 text-brand-500" />
-                Live Tooling Inventory · 77+ Dies
+                Live Tooling Inventory · 5 mm to 400 mm Range · 77+ Dies
               </div>
             </Reveal>
             <Reveal delay={70}>
@@ -32,19 +32,44 @@ export default function HomeGalleryShowcase() {
             </Reveal>
             <Reveal delay={110}>
               <p className="mt-3 font-lora text-[15px] sm:text-[16px] leading-relaxed text-ink-600">
-                From 53 mm packaged water lids to 95 mm lassi cups and multi-colour brand packaging. Over 77 ready dies manufactured at our Sakinaka facility.
+                We manufacture any diameter from 5 mm up to 400 mm—covering everything from 53 mm packaged water lids and 95 mm lassi cups to large bulk container foils and custom multi-colour brand packaging. Over 77 ready dies manufactured at our Sakinaka facility.
               </p>
             </Reveal>
           </div>
 
-          <Reveal delay={140}>
-            <ButtonLink
-              to="/gallery"
-              className="inline-flex items-center gap-2 rounded-xl bg-ink-900 px-6 py-3.5 font-geist text-[14px] font-semibold text-white shadow-sm hover:bg-ink-800 active:scale-98 transition-all shrink-0"
-            >
-              Explore Full Catalog ({galleryItems.length})
-              <ArrowRight className="h-4 w-4" />
-            </ButtonLink>
+          <Reveal delay={140} className="shrink-0 w-full md:w-auto">
+            <div className="flex flex-col items-start md:items-end gap-3.5">
+              {/* Brand Slogan Banner directly matching factory catalog / standee */}
+              <div className="relative inline-flex flex-col items-start md:items-end -rotate-1 sm:-rotate-2 transition-transform duration-300 hover:rotate-0 select-none">
+                <span className="font-serif italic font-bold text-[19px] sm:text-[22px] text-[#0f3060] tracking-tight leading-tight">
+                  Quality Packaging
+                </span>
+                <span className="relative font-serif italic font-bold text-[16px] sm:text-[18.5px] text-[#0f3060] tracking-tight leading-tight pb-1.5">
+                  for a Better Tomorrow
+                  {/* Dynamic Royal Blue Brush Underline matching factory banner */}
+                  <svg
+                    className="absolute -bottom-0.5 left-0 w-full h-[6px] text-[#0066ee]"
+                    viewBox="0 0 160 6"
+                    fill="none"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M 2 3.8 C 45 1.5, 110 2, 159 3.2 C 120 5.2, 50 5.5, 2 3.8 Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <ButtonLink
+                to="/gallery"
+                className="inline-flex items-center gap-2 rounded-xl bg-ink-900 px-6 py-3.5 font-geist text-[14px] font-semibold text-white shadow-sm hover:bg-ink-800 active:scale-98 transition-all w-full sm:w-auto justify-center"
+              >
+                Explore Full Catalog ({galleryItems.length})
+                <ArrowRight className="h-4 w-4" />
+              </ButtonLink>
+            </div>
           </Reveal>
         </div>
       </Container>

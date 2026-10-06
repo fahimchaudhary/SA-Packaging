@@ -141,8 +141,8 @@ export function useDocumentMeta(route: Route, productName?: string) {
     updateMetaTag("name", "twitter:description", pageDescription);
 
     const canonicalUrl = route.path === "/"
-      ? "https://safoilds.com/"
-      : `https://safoilds.com/#${route.path}${route.param ? `/${route.param}` : ""}`;
+      ? "https://www.safoillids.com/"
+      : `https://www.safoillids.com/#${route.path}${route.param ? `/${route.param}` : ""}`;
     updateMetaTag("property", "og:url", canonicalUrl);
 
     let canonicalLink = document.querySelector('link[rel="canonical"]');

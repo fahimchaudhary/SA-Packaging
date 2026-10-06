@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://safoilds.com/sitemap.xml
+Sitemap: https://www.safoillids.com/sitemap.xml

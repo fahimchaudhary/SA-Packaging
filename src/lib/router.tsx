@@ -81,34 +81,34 @@ export function Link({
 const TITLES: Record<string, { title: string; description: string }> = {
   "/": {
     title:
-      "S A Packaging | Aluminium Foil Packaging Manufacturer in Mumbai",
+      "S A Packaging | Aluminium Foil Lids Manufacturer in Mumbai | safoillids.com",
     description:
-      "S A Packaging is an aluminium foil packaging manufacturer and supplier in Mumbai, offering quality aluminium foil, printed foil and packaging solutions for food, dairy and FMCG applications.",
+      "S A Packaging (safoillids.com) — aluminium foil lids manufacturer & supplier in Mumbai. Heat-seal foil lids for dairy, curd, yoghurt, beverage & pharma cups. Sizes 5 mm–400 mm. Bulk supply. Call +91 81698 00610.",
   },
   "/about": {
-    title: "About S A Packaging | Foil Packaging Manufacturer, Sakinaka Mumbai",
+    title: "About S A Packaging | Foil Lids Manufacturer Mumbai | safoillids.com",
     description:
-      "12 years of aluminium foil lid and packaging manufacturing from Sakinaka, Mumbai. Capacity 2 crore pieces per month, 5 mm to 400 mm, 25 to 40 micron. GSTIN 27BFQPD7974E1Z0.",
+      "SA Packaging has 12+ years of aluminium foil lid manufacturing experience from Sakinaka, Mumbai. Capacity 2 crore pieces/month. Sizes 5–400 mm, 25–40 micron. GSTIN 27BFQPD7974E1Z0.",
   },
   "/products": {
-    title: "Aluminium Foil Packaging Products | S A Packaging Mumbai",
+    title: "Aluminium Foil Lids Products | SA Packaging Mumbai | safoillids.com",
     description:
-      "Browse aluminium foil packaging solutions — Poly PP, printed foil lids, HIPS dessert lids, PP lacquer roll stock, blister lidding and PET jar seals.",
+      "All aluminium foil lids by SA Packaging — Poly PP foil lids, printed foil lids, HIPS dessert lids, PP lacquer roll stock, blister lidding and PET jar seals. Bulk & industrial supply.",
   },
   "/gallery": {
-    title: "Packaging Die Catalog & Samples | 77+ Live Dies | S A Packaging",
+    title: "Foil Lid Die Catalog & Samples | S A Packaging | safoillids.com",
     description:
-      "Inspect 77+ live production foil lid dies, custom printed foil samples, embossed foils, and roll stock from S A Packaging works in Sakinaka, Mumbai.",
+      "77+ live production foil lid dies, custom printed foil samples, embossed foils & roll stock from SA Packaging, Sakinaka Mumbai. All sizes from 5 mm to 400 mm.",
   },
   "/customization": {
-    title: "Custom Aluminium Foil Packaging Solutions | S A Packaging",
+    title: "Custom Aluminium Foil Lids | SA Packaging Mumbai | safoillids.com",
     description:
-      "Custom diameter, printing and heat-seal chemistry engineered to your container. Prototype testing and bulk production in Sakinaka, Mumbai.",
+      "Custom-diameter, custom-printed heat-seal foil lids engineered to your container. Prototype testing and bulk production by SA Packaging, Sakinaka Mumbai.",
   },
   "/contact": {
-    title: "Contact S A Packaging | Aluminium Foil Packaging Supplier Mumbai",
+    title: "Contact SA Packaging | Foil Lids Supplier Mumbai | safoillids.com",
     description:
-      "Send your foil packaging enquiry — diameter, print, polymer and monthly quantity. Sakinaka, Mumbai. Bulk & industrial supply only.",
+      "Enquire about foil lids from SA Packaging (safoillids.com) — send diameter, print, polymer & monthly quantity. Sakinaka, Mumbai. +91 81698 00610. Bulk & industrial supply only.",
   },
 };
 
